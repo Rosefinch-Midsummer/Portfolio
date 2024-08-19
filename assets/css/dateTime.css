@@ -1,0 +1,16 @@
+.date-time {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    color: #333;
+}
+
+.large-time {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.small-time {
+    font-size: 12px;
+}

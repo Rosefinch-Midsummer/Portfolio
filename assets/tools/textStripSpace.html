@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="https://static.jyshare.com/images/favicon.ico"  type="image/x-icon" />
+    <title>文本空格清除工具</title>
+    <link rel="stylesheet" href="../css/textStripSpace.css">
+    <link rel="stylesheet" href="../css/dateTime.css">
+    
+    <script type="module">
+        import { initDateTime } from '../js/dateTime.js';
+        initDateTime();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>在线清除空格工具</h1>
+        <textarea id="inputText" placeholder="在这里输入文本..."></textarea>
+
+        <div class="options">
+            <label><input type="checkbox" id="removeSpaces" checked> 去除空格</label>
+            <label><input type="checkbox" id="removeTabs"> 去除制表符</label>
+            <label><input type="checkbox" id="removeNewlines"> 去除回车</label>
+        </div>
+
+        <button id="processBtn">开始去除</button>
+        <button id="copyBtn">复制结果</button>
+        <button id="exportBtn">导出文本</button>
+        <button id="clearBtn">清除结果</button>
+
+        <h2>处理后的文本</h2>
+        <textarea id="outputText" placeholder="结果将在这里显示..." readonly></textarea>
+    </div>
+    
+    <script src="../js/textStripSpace.js"></script>
+</body>
+</html>

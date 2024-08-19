@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #555;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.tool {
+    margin-top: 20px;
+}

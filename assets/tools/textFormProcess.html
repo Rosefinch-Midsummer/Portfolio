@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本格式化工具</title>
+    <link rel="stylesheet" href="../css/textFormProcess.css">
+    <link rel="stylesheet" href="../css/dateTime.css">
+    
+    <script type="module">
+        import { initDateTime } from '../js/dateTime.js';
+        initDateTime();
+    </script>
+    <script src="../js/textFormProcess.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>文本格式化工具</h1>
+        <textarea id="input" placeholder="在这里输入文本..." rows="6"></textarea>
+        <textarea id="output" placeholder="处理后的文本将显示在这里..." rows="6" readonly></textarea>
+        
+        <div class="button-group">
+            <button id="add-heading1-btn">添加 ##</button>
+            <button id="add-heading2-btn">添加 ###</button>
+            <button id="add-asterisks-btn">添加 **</button>
+            <button id="copy-btn">复制全文</button>
+            <button id="clear-btn">删除文本</button>
+            <button id="export-btn">导出为Markdown</button>
+            <div class="file-upload">
+                <input type="file" id="file-input" accept=".txt/.md" />
+                <button id="upload-btn">上传文件</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

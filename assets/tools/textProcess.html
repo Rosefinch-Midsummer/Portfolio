@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="https://static.jyshare.com/images/favicon.ico" type="image/x-icon" />
+    <title>文本排版工具</title>
+    <link rel="stylesheet" href="../css/textProcess.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>文本处理工具</h1>
+        <textarea id="inputText" placeholder="在这里输入文本..."></textarea>
+
+        <div class="options">
+            <label><input type="checkbox" id="removeSpaces" checked> 去除空格</label>
+            <label><input type="checkbox" id="removeTabs"> 去除制表符</label>
+            <label><input type="checkbox" id="removeNewlines"> 去除回车</label>
+            <label><input type="checkbox" id="removeDuplicates"> 去除重复行</label>
+            <label><input type="checkbox" id="trimWhitespace"> 修剪行首行尾空白</label>
+            <label><input type="checkbox" id="toUpperCase"> 转换为大写</label>
+            <label><input type="checkbox" id="toLowerCase"> 转换为小写</label>
+        </div>
+
+        <button id="processBtn">开始去除</button><br>
+        <button id="copyBtn">复制结果</button>
+        <button id="exportBtn">导出文本</button>
+        <button id="clearBtn">清除结果</button>
+
+        <div class="replace-option">
+            <input type="text" id="replaceFrom" placeholder="替换内容" />
+            <input type="text" id="replaceTo" placeholder="替换为" />
+        </div>
+        
+        <div id="stats"></div>
+
+        <h2>处理后的文本</h2>
+        <textarea id="outputText" placeholder="结果将在这里显示..." readonly></textarea>
+    </div>
+
+    <script src="../js/textProcess.js"></script>
+</body>
+
+</html>
